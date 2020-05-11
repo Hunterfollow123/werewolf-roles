@@ -44,7 +44,7 @@ role 2 = hunter
 role 3 = witch
 role 4 = salva
 role 5 = crow
-role 6 = gunner / القناص
+role 6 = sniper
 """)
 
 
