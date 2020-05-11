@@ -4,7 +4,7 @@
 
 import random, os, time
 
-os.system("cls")
+os.system("clear")
 print("\n")
 
 path = str(input("Path to the players file : "))
