@@ -48,24 +48,29 @@ def main():
 
     print("\n")
 
-    s = 0
-    for player in players:
-        if player == players[6]:
-            break
-        s = s + 1
-        print("role", s, ":", player, end="\r")
-        players.remove(player)
+    roles = [
+    "seeker",
+    "hunter",
+    "witch",
+    "salva",
+    "crow",
+    "sniper",
+    ]
+
+    j = list(random.sample(players, k=6))
+
+
+    for player in j:
+        x = random.choice(roles)
+        print(x, ":", player, end="\r")
+        roles.remove(x)
         time.sleep(0.2)
+
+
 
     print("\n")
 
-    print("""role 1 = seeker
-role 2 = hunter
-role 3 = witch
-role 4 = salva
-role 5 = crow
-role 6 = sniper
-""")
+
 
 def rerun():
     os.system("cls")
@@ -104,24 +109,29 @@ def rerun():
 
     print("\n")
 
-    s = 0
-    for player in players:
-        if player == players[6]:
-            break
-        s = s + 1
-        print("role", s, ":", player, end="\r")
-        players.remove(player)
+    roles = [
+    "seeker",
+    "hunter",
+    "witch",
+    "salva",
+    "crow",
+    "sniper",
+    ]
+
+    j = list(random.sample(players, k=6))
+
+
+    for player in j:
+        x = random.choice(roles)
+        print(x, ":", player, end="\r")
+        roles.remove(x)
         time.sleep(0.2)
+
+
 
     print("\n")
 
-    print("""role 1 = seeker
-role 2 = hunter
-role 3 = witch
-role 4 = salva
-role 5 = crow
-role 6 = sniper
-""")
+
 
 main()
 while True:
